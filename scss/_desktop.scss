@@ -1,0 +1,152 @@
+@media only screen and (min-width: 1024px) {
+  header {
+    background-image: url("../images/desktop/image-header.jpg");
+  }
+
+  header {
+    .top-header {
+      padding-top: 0;
+      .burger {
+        display: none;
+      }
+
+      .navbar {
+        position: initial;
+        display: block;
+        width: auto;
+        background-color: initial;
+
+        ul {
+          flex-flow: row wrap;
+          align-items: center;
+
+          li {
+            color: white;
+
+            .contact {
+              background-color: white;
+            }
+
+            .contact:hover {
+              cursor: pointer;
+              background-color: skyblue;
+              color: white;
+            }
+          }
+
+          li:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .header-text {
+      top: 0;
+    }
+
+    .arrow-down {
+      top: 50px;
+    }
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+
+    .main-text {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      text-align: left;
+
+      .box-text {
+        width: 70%;
+      }
+    }
+
+    #transform {
+      order: 1;
+    }
+
+    #egg {
+      order: 2;
+    }
+
+    #cup {
+      order: 3;
+    }
+
+    #stand-out {
+      order: 4;
+    }
+
+    #graphic-design {
+      order: 5;
+    }
+
+    #photography {
+      order: 6;
+    }
+
+    .main-image {
+      height: auto;
+      .image-text {
+        position: absolute;
+        bottom: 250px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+        .box-text {
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  .client-testimonials {
+    .clients {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+      margin-bottom: 3em;
+      .client {
+        width: 30%;
+
+        .client-text {
+          padding: 2em 1em;
+        }
+
+        .client-title {
+          padding-bottom: 2em;
+          margin-bottom: 1em;
+        }
+      }
+    }
+    .testimonials-header {
+      width: 100%;
+      padding: 2em 0;
+      margin-top: 2em;
+    }
+  }
+
+  .image-collage {
+    display: flex;
+  }
+
+  footer {
+    .footer-links {
+      justify-content: center;
+    }
+
+    .footer-links > * {
+      padding: 1em 2em;
+    }
+  }
+}
